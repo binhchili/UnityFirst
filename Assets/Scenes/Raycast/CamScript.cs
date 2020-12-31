@@ -28,10 +28,10 @@ public class CamScript : MonoBehaviour
                 
                 if(hit.collider.name == "Plane")
                 {
-                    Debug.Log(hit.point);
+                    Debug.Log(transform.forward);
                     cube.transform.position = hit.point + new Vector3(0,cube.transform.localScale.y / 2,0);
                     
-
+                    
                 }
                 
             }
